@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Event";
+}
+
+<h3>Таблиця клієнтів</h3>
+
+<section class="u-clearfix u-white u-section-2" id="carousel_f68f">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+            <div class="u-layout" style="">
+                <div class="u-layout-row" style="">
+                    @foreach (var item in Model)
+                    {
+                        <div class="u-container-style u-layout-cell u-left-cell u-size-26 u-size-xs-60 u-layout-cell-1" src="">
+
+                            <div class="u-container-layout u-valign-middle u-container-layout-1">
+                                <h2 class="u-align-center u-text u-text-1" >@item.Title</h2>
+                                <p class="u-align-center u-text u-text-2" >@item.Info</p>
+                            </div>
+                        </div>
+                        <div class="u-align-center u-container-style u-layout-cell u-right-cell u-size-34 u-size-xs-60 u-layout-cell-2" src="">
+                            <div class="u-container-layout u-valign-middle u-container-layout-2" src="">
+                                <div class="u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-shape u-shape-svg u-text-palette-2-base u-shape-1">
+                                    <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 140" style=""><use xlink:href="#svg-596d"></use></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 160 140" x="0px" y="0px" id="svg-596d" style="enable-background:new 0 0 160 140;"><path d="M38.1,14.8c8.8-0.7,18.1,1.2,28.4,0.3c17-1.5,33.3-8.6,49.7-13c6.9-1.9,14.3-3,21.3-1.2c8.6,2.3,13.5,8.9,16.3,17.1
+	c8,23.1,6.9,40.9,4.4,65.3c-1.4,13.7-5.5,30.3-20,35c-11.4,3.7-23.9-0.3-35.7,1.8c-20.8,3.8-43.5,25-65.2,18.8
+	c-42.8-12.4-48.2-87.2-19.2-115C24.8,17.6,31.3,15.4,38.1,14.8L38.1,14.8z"></path></svg>
+                                </div>
+                                <img class="u-image u-image-1" src=@item.Photo data-image-width="1554" data-image-height="1080">
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+

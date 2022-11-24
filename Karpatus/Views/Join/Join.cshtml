@@ -1,0 +1,26 @@
+﻿@model Karpatus.Models.JoinTablModel
+@{
+    ViewBag.Title = "Add";
+}
+<form asp-action="Add" asp-controller="Join">
+
+    <div class="form-group">
+        <label asp-for="Name" class="control-label">Ім'я</label>
+        <input type="text" asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Date" class="control-label">Прізвище</label>
+        <input type="text" asp-for="Date" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Mail" class="control-label">Сума</label>
+        <input type="text" asp-for="Mail" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Phone" class="control-label">Річні</label>
+        <input type="text" asp-for="Phone" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Записати до бази" class="btn btn-default" />
+    </div>
+</form>

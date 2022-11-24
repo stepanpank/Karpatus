@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Place";
+}
+<section class="u-align-center u-clearfix u-image u-section-5" id="carousel_c35f" data-image-width="1727" data-image-height="1080">
+    <div class="u-clearfix u-sheet u-valign-middle-sm u-valign-middle-xs u-sheet-1">
+        <div class="u-clearfix u-gutter-0 u-layout-wrap u-layout-wrap-1">
+            <div class="u-gutter-0 u-layout">
+                <div class="u-layout-row">
+                    @foreach (var item in Model)
+                    {
+                        <div class="u-size-30 u-size-30-md">
+                            <div class="u-layout-col">
+                                <div class="u-container-style u-layout-cell u-left-cell u-palette-2-base u-size-30 u-layout-cell-1">
+                                    <div class="u-container-layout u-valign-middle u-container-layout-1">
+                                        <h4 class="u-text u-text-1">@item.Title</h4>
+                                        <p class="u-text u-text-2">@item.Info </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u-size-30 u-size-30-md">
+                            <div class="u-layout-col">
+                                <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-3">
+                                    <div class="u-container-layout u-valign-bottom-lg u-valign-bottom-xl u-container-layout-3">
+                                        <img class="u-expanded-width u-image u-image-2" src=@item.Photo data-image-width="1554" data-image-height="1080">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    }
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
